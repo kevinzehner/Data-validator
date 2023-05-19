@@ -1,0 +1,35 @@
+# Data validation project
+
+## Table of contents
+
+- [Overview](#overview)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [Author](Kevin Zehner)
+
+## Overview
+
+The project is a small interface which takes the users data and validates it. 
+Once the user has entered their data, if it is valid it will change color to green, if invalid it changes to red.
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS3
+  -Javascript
+
+### What I learned
+
+I reallz enjoyed this project as there were a lot of new concepts. Firstly, I learned how i can use Regex to validate a name. 
+Using Regex allowed me to make sure that only certain Characters were allowed. The same goes for the email address, which I used regex to make sure the email is a certain format.
+I also learned about the LUHN algorithm and how it is used to validate credit card numbers. 
+Finally, I got some practice with a 3rd party API, that sends an email when the data is submitted. 
+
+### Continued development
+
+in the future i would like to try this challenge again, but using my own back-end code to implement the data submission
+
+## Author
+
+-Author - Kevin Zehner
+-Email - kevzehner@gmail.com
