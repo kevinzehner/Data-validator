@@ -12,7 +12,6 @@ function validateName() {
   const name = nameInput.value.trim();
   const regex = /^[a-zA-Z\s-]+$/;
 
-  //change input field background color
 
   if (regex.test(name)) {
     nameInput.style.backgroundColor = "#89c82e";
@@ -26,12 +25,12 @@ nameInput.addEventListener("blur", validateName);
 // ////////////// EMAIL VALIDATION ////////////////
 
 function validateEmail() {
-  //variables
+
   const emailInput = document.getElementById("email");
   const email = emailInput.value.trim();
   const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
-  //change input field background color
+ 
   if (regex.test(email)) {
     emailInput.style.backgroundColor = "#89c82e";
   } else {
@@ -43,7 +42,7 @@ emailField.addEventListener("blur", validateEmail);
 
 // ////////////// VALIDATE CARD ////////////////
 function validateCreditCard() {
-  // Variables
+ 
   const cardInput = document.getElementById("card");
   const cardNumber = cardInput.value.replace(/\D/g, "");
   const digits = cardNumber.toString().split("").map(Number);
@@ -65,7 +64,6 @@ function validateCreditCard() {
     double = !double;
   }
 
-  //change input field background color
 
   if (sum % 10 === 0 && cardNumber.length >= 12 && cardNumber.length <= 19) {
     cardInput.style.backgroundColor = "#89c82e";
@@ -79,7 +77,6 @@ cardInput.addEventListener("blur", validateCreditCard);
 // ////////////// EMAIL WITH SUBMITTED DATA ////////////////
 
 function sendMail() {
-  //variables
   const params = {
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
@@ -95,7 +92,6 @@ function sendMail() {
   });
 }
 
-//event listener
 
 document.getElementById("myForm").addEventListener("submit", function (event) {
   event.preventDefault();
